@@ -1,0 +1,221 @@
+.gaegu-light {
+    font-family: "Gaegu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #4B70B7;  /*random depending on vistor*/
+}
+.gaegu-regular {
+    font-family: "Gaegu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #4B70B7;  /*random depending on vistor*/
+}
+.gaegu-bold {
+    font-family: "Gaegu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #4B70B7; /*random depending on vistor*/
+}
+.inter-regular{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #4B70B7; /*random depending on vistor*/
+}
+h1{
+    font-size: 3.5vw;
+}
+h2{
+    font-size: 2.5vw;
+}
+p {
+    font-size: 1.5vw;
+}
+body{
+    background-color: #F4F1EA;
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+svg{
+  width: 100%;
+  height: auto;
+}
+/*NAV*/
+a {
+	text-decoration: none;
+	text-align: center;
+}
+.nav {
+  width: 100%;
+	overflow: hidden;
+}
+.nav a {
+	float: right;
+  color:  #4B70B7;
+  text-align: center;
+  padding: 5px 50px; 
+  text-decoration: none;
+}
+.nav a:hover {
+ 	color:  #1b3363;
+ }
+.nav a.active {
+	color:  #0c1e41;
+}
+.nav a.split {
+  float: left;
+}
+.landingpage{
+  background-color: #4B70B7;
+  margin: 0;
+  height: 100vh;
+  background-image: url('backgrounds/landing page.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  bottom: 0;
+  left: 0;
+}
+.projectbackground{
+  background-color: #4B70B7;
+  margin: 0;
+  height: 1%;
+  background-image: url('backgrounds/light house.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  bottom: 0;
+  left: 0;
+}
+.containerside {
+ 	display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.containerstack {
+ 	display: block;
+ 	align-items: center;
+}
+.textoverlay{
+    position: relative;
+    text-align: center;
+    color: #F4F1EA;
+}
+.social{
+    position: absolute;
+    top: 70%;
+    left: 38%;
+    transform: translate(-50%, -50%)
+}
+.icon-container {
+  display: inline-flex;
+  align-items: center;
+}
+
+.icon-container .fas {
+  font-size: 24px;
+  margin-right: 5px;
+  padding: 20px;
+}
+.linkedin-icon{
+  color: #F4F1EA;
+  font-size: 24px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.linkedin-icon:hover{
+  color: #423f40;
+}
+.github-icon{
+  color: #F4F1EA;
+  font-size: 24px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.github-icon:hover{
+  color: #423f40;
+}
+.twitter-icon{
+  color: #F4F1EA;
+  font-size: 24px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.twitter-icon:hover{
+  color: #423f40;
+}
+.itch-io-icon{
+  color: #F4F1EA;
+  font-size: 24px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.itch-io-icon:hover{
+  color: #423f40;
+}
+
+/* project gallery */
+.project-section {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-row-gap: 50px;
+  justify-content: space-evenly;
+}
+.card {
+  width: 400px;
+  height: 42vh;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: left;
+  margin-top: 40%;
+}
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.card-content {
+  padding: 2px;
+  text-align: left;
+  padding-left: 20px;
+}
+.card-title {
+  color:  #4B70B7 ;
+  font-weight: bold;
+  margin-bottom: 8px;
+  text-decoration: none;
+  font-family: "gaegu", sans-serif;
+  font-style: normal;
+  font-size: 1.2vw;
+}
+.card-body {
+ color: #252323;
+  font-family: "inter-regualr", sans-serif;
+  font-style: normal;
+  font-size: 0.90vw;
+}
+.portfolio{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 5px 0 0;
+}
+
+@media screen and (max-width: 800px) {
+  .portfolio {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .portfolio {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
